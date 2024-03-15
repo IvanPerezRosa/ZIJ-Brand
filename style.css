@@ -2,3 +2,33 @@ body{
     background-color: rgb(207, 207, 207);
 }
 
+/* Resolución para moviles */
+@media only screen and (max-width: 768px) {
+    header{
+        color: white;
+        width: 96%;
+        position: fixed;  
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        background-color: #3E885B;
+        z-index: 1;
+
+        div {
+            font-size: large; /* Tamaño de la fuente */
+            display: flex; /* Contenedor de tipo flexbox */
+            flex-direction: column; /* Dirección de la columna */
+            transition: transform 0.5s ease-in-out; /* Transición */
+            text-align: left; /* Alineación de texto */
+            margin-left: 60%;
+            align-items: left;
+            z-index: 2;
+
+        }
+        img {
+            width: 30%;
+            margin-left: 1vw;
+        }
+}
+
+}
