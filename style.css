@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    padding: 2vw;
+    padding: 1vw;
     padding-left: 3vw;
     padding-right: 3vw;
     display: flex;
@@ -39,6 +39,7 @@ header {
             border: solid 0.1vw white;
             border-radius: 2vw;
             padding: 1vw;
+            padding-left: 1.5vw;
             width: 50vw;
         }
     }
@@ -61,8 +62,51 @@ header {
     justify-content: center;
     img {
         margin: 4vw;
-        width: 30vw;
+        width: 150px;
     }
+}
+
+#contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#productos {
+    font-family: "Consolas";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+section {
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 13px;
+    width: 160px;
+    text-align: center;
+    img {
+        border-radius: 10px;
+        width: 100%;
+    }
+    h1 {
+        font-size: 20px;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 15px;
+        margin: 0;
+    }
+}
+
+section:hover {
+    width: 180px;
+    transition: 0.5s;
 }
 
 footer{
@@ -94,11 +138,27 @@ footer{
 
     header {
         margin-top: 2vw;
+        div a {
+            font-size: 2.5vw;
+        }
+        form {
+            input {
+                padding: 0.7vw;
+                padding-left: 1.3vw;
+                font-size: 1.2vw;
+            }
+        }
+    }
+
+    #imagen {
+        img {
+            margin: 3vw;
+        }
     }
 
     #logo {
         img {
-            width: 5vw;
+            width: 6vw;
         }
     }
 
