@@ -56,13 +56,38 @@ header {
     }
 }
 
-#contenido {
+#imagen {
     display: flex;
     justify-content: center;
     img {
         margin: 4vw;
         width: 30vw;
     }
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    background-color: #34312d;
+    font-size: 2vw;
+    margin-top: 10vw;
+    color: white;
+
+   #contactos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 45vw;
+    
+    img{    
+        width: 5vw;
+       }
+   }
+ 
+   
 }
 
 @media only screen and (min-width: 768px) {
