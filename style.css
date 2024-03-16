@@ -120,6 +120,7 @@ footer{
     font-size: 2vw;
     margin-top: 10vw;
     color: white;
+    position: relative;
 
    #contactos {
     display: flex;
@@ -159,6 +160,30 @@ footer{
     #logo {
         img {
             width: 6vw;
+        }
+    }
+
+    footer{
+        height: 6vw;
+        top: 6.5vh;
+        #contactos img{
+            width: 4vw;
+        }
+    }
+    
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    footer{
+        height: 5vw;
+        p{
+            font-size: 1.54vw;
+        }
+        #contactos img{
+            width: 2.7vw;
         }
     }
 
