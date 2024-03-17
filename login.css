@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    background-color: #bfb5af;
+    color: white;
+    font-family: "Consolas";
+
+}
+
+#logo {
+    margin: 0;
+    padding: 0;
+    img {
+        width: 200px;
+    }
+}
+
+#centrar_img{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 96vw;
+    padding: 2vw;
+}
+
+#Login{
+    text-align: center;
+    position: absolute;
+    width: 100vw;
+    font-size: 3vw;
+    h1{
+        margin: 0;
+    }
+}
+
+#formulario{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
+
+input { 
+    border-radius: 8px;
+    border: solid white;
+    font-size: 2.2vw;
+
+}
+#btn_inicio{
+background-color: #34312d;
+border: solid #34312d;
+color: white;
+font-size: 2.5vw;
+}
+}
+
+form{
+    border-radius: 10px;
+    background-color: #3e885b;
+    padding: 5vw;
+    text-align: center;
+h1{
+    font-size: 4.5vw;
+    margin-bottom: 1vw;
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+#centrar_img{
+    justify-content: left;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+    #formulario{
+        input{
+            font-size: 1.3vw;
+
+        }
+        #btn_inicio{
+            font-size: 1.5vw;
+            margin-top: 0.7vw;
+        }   
+    }
+    form {
+padding: 3vw;
+        h1{
+            font-size: 2.5vw;
+        }
+    }
+        
+ 
+
+}

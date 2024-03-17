@@ -5,7 +5,9 @@ Verde: #3e885b
 Gris: #bfb5af
 Negro: #34312d 
 */
-
+.italica{
+    font-style: italic;
+}
 html {
     scroll-behavior: smooth;
 }
