@@ -31,6 +31,7 @@ header {
         color: white;
         font-size: 4vw;
         font-weight: bold;
+        margin: 0;
     }
     div a:hover {
         text-decoration: underline;
@@ -47,8 +48,90 @@ header {
     }
     div {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 2vw;
     }
+    img {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.btn-menu {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 4vw;
+    padding-top: 0.4vw;
+}
+
+.btn-menu img:hover {
+    cursor: pointer;
+}
+
+.cont-menu label {
+    img {
+        width: 20px;
+    }
+}
+
+/* MENÚ LATERAL */
+
+#btn-menu {
+    display: none;
+}
+
+.contenedor-menu {
+    position: absolute;
+    background-color: #00000043;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~ .contenedor-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #3e885b;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    transition: all 400ms ease;
+    border-left: 5px solid transparent;
+    font-size: 20px;
+}
+
+.cont-menu nav a:hover {
+    border-left: 5px solid white;
+    background-color: #27613e;
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
 }
 
 #logo {
@@ -150,6 +233,10 @@ footer{
                 padding-left: 1.3vw;
                 font-size: 1.2vw;
             }
+        }
+        .btn-menu {
+            width: 2.5vw;
+            padding-top: 0.2vw;
         }
     }
 
