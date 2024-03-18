@@ -146,9 +146,16 @@ header {
     display: flex;
     justify-content: center;
     img {
-        margin: 4vw;
+        margin-top: 4vw;
         width: 150px;
     }
+}
+
+h1{
+    color: white;
+    margin: 1vw;
+    margin-bottom: 3vw;
+    font-size: 5vw;
 }
 
 #contenido {
@@ -242,7 +249,7 @@ footer{
 
     #imagen {
         img {
-            margin: 3vw;
+            margin-top: 3vw;
         }
     }
 
